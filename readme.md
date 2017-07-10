@@ -5,11 +5,17 @@ Message Lab
 
 # Contents
 
+* [What this is](#what-this-is)
 * [How to use](#how-to-use)
 * [Modules](#modules)
 * [Themes](#themes)
 * [License](#license)
 -----------------------------------------
+# What this is
+
+This repository installs the code to build a Drupal 8 shell site meeting the dependency requirements of the DTA's "Message Lab".
+
+Note it does not create content types, views or roles by default. These can be installed using the configuration API.
 
 # How to use
 

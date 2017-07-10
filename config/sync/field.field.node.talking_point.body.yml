@@ -1,0 +1,22 @@
+uuid: da4c2f56-a73d-4477-a8c4-f8832fa5456a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.talking_point
+  module:
+    - text
+id: node.talking_point.body
+field_name: body
+entity_type: node
+bundle: talking_point
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

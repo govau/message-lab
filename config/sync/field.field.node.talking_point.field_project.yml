@@ -1,0 +1,28 @@
+uuid: f90c5c45-7a2b-4bfc-9ffb-df90701d3d5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project
+    - node.type.talking_point
+    - taxonomy.vocabulary.projects
+id: node.talking_point.field_project
+field_name: field_project
+entity_type: node
+bundle: talking_point
+label: Project
+description: 'You must assign a <strong>Talking Point</strong> to a Project otherwise it will not be available to users.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      projects: projects
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

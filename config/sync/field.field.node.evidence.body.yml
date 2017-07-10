@@ -1,0 +1,22 @@
+uuid: c50b1654-1d4b-4365-ad2f-515b20bb8867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.evidence
+  module:
+    - text
+id: node.evidence.body
+field_name: body
+entity_type: node
+bundle: evidence
+label: Text
+description: 'Add text here. Make sure that it is clear, simple and precise, and reference any sources used through the <strong>Sources</em> field or in text if the source is not publicly available. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

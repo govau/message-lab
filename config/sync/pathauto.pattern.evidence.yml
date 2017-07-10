@@ -1,0 +1,22 @@
+uuid: 1b9c26bf-503f-418f-b502-7964ef40b1f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: evidence
+label: Evidence
+type: 'canonical_entities:node'
+pattern: 'evidence/[node:title]'
+selection_criteria:
+  b1df36cb-0d75-4886-a461-ca98966edb56:
+    id: node_type
+    bundles:
+      evidence: evidence
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b1df36cb-0d75-4886-a461-ca98966edb56
+selection_logic: and
+weight: -5
+relationships: {  }

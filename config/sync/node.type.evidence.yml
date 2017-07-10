@@ -1,0 +1,17 @@
+uuid: ef641f26-985b-44e0-b8e4-26c55c51c696
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Evidence
+type: evidence
+description: "<p><em>Evidence</em> items are short pieces of text providing the fact base for <em>Talking Points</em>. <em>Evidence</em> should reference one or more <em>Sources</em>, but this is not required for <em>Evidence</em> that does not have a public URL. If this information is not publicly available, ensure the <em>Evidence</em> contains the <em>Source</em> directly, or consider not using that information at all.</p>\r\n<p><em>Evidence</em> requires a title and text, and can reference <em>Sources</em> and <em>Tags</em>. Note that the required <em>Source</em> <strong>must</strong> already exist, you cannot add items while editing."
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

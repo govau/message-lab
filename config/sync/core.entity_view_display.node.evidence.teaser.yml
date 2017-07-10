@@ -1,0 +1,28 @@
+uuid: 00d87976-4fb8-43fd-ab97-e15f359fac49
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evidence.body
+    - node.type.evidence
+  module:
+    - text
+    - user
+id: node.evidence.teaser
+targetEntityType: node
+bundle: evidence
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

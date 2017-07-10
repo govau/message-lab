@@ -1,0 +1,21 @@
+uuid: 9a3a3726-9635-42c2-986c-29717854628a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.talking_point_comments
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.talking_point_comments.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: talking_point_comments
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

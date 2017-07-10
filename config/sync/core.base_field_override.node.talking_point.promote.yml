@@ -1,0 +1,22 @@
+uuid: 980b9245-2f8c-437d-a3ca-8358d9238e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.talking_point
+id: node.talking_point.promote
+field_name: promote
+entity_type: node
+bundle: talking_point
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

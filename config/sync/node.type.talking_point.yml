@@ -1,0 +1,17 @@
+uuid: 43d74a4a-f392-40b8-b865-083a2a6cbd3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Talking Point'
+type: talking_point
+description: "<p><em>Talking Points</em> are the core content type. They are short pieces of text that convey a message on a particular theme. Users can add references to <em>Evidence</em> and tag with <em>Projects</em> and <em>Tags</em>.</p>\r\n<p><em>Talking Points</em> require a title, text, date, and reference <em>Evidence</em>, <em>Tags</em> and <em>Projects</em>. Note the appropriate <em>Evidence</em> item <strong>must</strong> already exist, you cannot add it while editing.\r\n"
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

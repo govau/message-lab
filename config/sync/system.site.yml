@@ -1,0 +1,14 @@
+uuid: 47c44fa2-5b7d-4c06-8a23-d2c2757e8e31
+name: 'Message Lab'
+mail: jesse.boyd@digital.gov.au
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/62
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

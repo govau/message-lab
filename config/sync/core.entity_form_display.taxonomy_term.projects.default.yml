@@ -1,0 +1,49 @@
+uuid: a6aaacde-06f3-459c-bee1-61381281b32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.projects.field_narrative
+    - field.field.taxonomy_term.projects.field_user_experiences
+    - taxonomy.vocabulary.projects
+  module:
+    - text
+id: taxonomy_term.projects.default
+targetEntityType: taxonomy_term
+bundle: projects
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_narrative:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_user_experiences:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true

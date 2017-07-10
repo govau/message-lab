@@ -1,0 +1,23 @@
+uuid: 3e901f8b-3cbd-4ef6-8a4e-1646fe28da29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.source
+  module:
+    - link
+id: node.source.field_url
+field_name: field_url
+entity_type: node
+bundle: source
+label: URL
+description: '<em>Sources</em> require a <strong>public</strong> URL. Include required information so the user can access the information quickly and easily.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

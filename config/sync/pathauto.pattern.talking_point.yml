@@ -1,0 +1,22 @@
+uuid: c4d95793-6e60-4082-9fb8-dfcde702ccfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: talking_point
+label: 'Talking Point'
+type: 'canonical_entities:node'
+pattern: 'talking-point/[node:title]'
+selection_criteria:
+  3ae9735f-17cc-49e8-ba19-bbd077ffed48:
+    id: node_type
+    bundles:
+      talking_point: talking_point
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3ae9735f-17cc-49e8-ba19-bbd077ffed48
+selection_logic: and
+weight: -5
+relationships: {  }

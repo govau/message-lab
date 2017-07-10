@@ -1,0 +1,30 @@
+uuid: 5c312939-3841-4dae-aed0-bed4ed2fb9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.evidence
+  module:
+    - system
+    - views
+  theme:
+    - message_lab
+id: views_block__evidence_block_1
+theme: message_lab
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:evidence-block_1'
+settings:
+  id: 'views_block:evidence-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/projects/*\r\n/taxonomy/term/*"
+    negate: false
+    context_mapping: {  }

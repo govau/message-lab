@@ -1,0 +1,19 @@
+uuid: ec3e1774-2431-4c8d-8153-3396c8e70466
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_user_experiences
+field_name: field_user_experiences
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

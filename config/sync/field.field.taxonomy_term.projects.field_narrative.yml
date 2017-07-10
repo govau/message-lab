@@ -1,0 +1,21 @@
+uuid: 4020bf0b-2bfe-4abd-b84b-5910d8c73803
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_narrative
+    - taxonomy.vocabulary.projects
+  module:
+    - text
+id: taxonomy_term.projects.field_narrative
+field_name: field_narrative
+entity_type: taxonomy_term
+bundle: projects
+label: '250-word description'
+description: 'The <em>250-word description</em> field allows you to provide a narrative context for the <em>Project</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

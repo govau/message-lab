@@ -1,0 +1,29 @@
+uuid: 255357fb-e897-4444-9ec5-c701d60ab6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source
+    - node.type.evidence
+    - node.type.source
+id: node.evidence.field_source
+field_name: field_source
+entity_type: node
+bundle: evidence
+label: Source
+description: "<p>Reference sources here. Please note any <em>Sources</em> you wish to reference <strong>must</strong> exist already. You cannot create them from this page.</p>\r\n<p>While this is not a required field, please seriously consider whether this <em>Evidence</em> is useful if it does not contain a publicly available <em>Source</em>."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      source: source
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

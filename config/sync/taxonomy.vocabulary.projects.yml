@@ -1,0 +1,9 @@
+uuid: 736de3a8-7de3-4719-91ca-1b9c0ba2022c
+langcode: en
+status: true
+dependencies: {  }
+name: Activities
+vid: projects
+description: '"Activities" are the key taxonomy term and allow the site to build the individual Activity pages.'
+hierarchy: 0
+weight: 0

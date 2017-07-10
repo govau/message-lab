@@ -1,0 +1,5 @@
+sites/*/local.services.yml
+sites/*/settings.local.php
+sites/*/files
+sites/*/private
+sites/simpletest

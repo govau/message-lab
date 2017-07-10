@@ -1,0 +1,28 @@
+uuid: 9da8a198-16fe-4cee-9839-5f8d1b611285
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.talking_point.body
+    - node.type.talking_point
+  module:
+    - text
+    - user
+id: node.talking_point.teaser
+targetEntityType: node
+bundle: talking_point
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

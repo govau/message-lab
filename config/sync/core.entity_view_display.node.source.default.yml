@@ -1,0 +1,42 @@
+uuid: d53516b9-a2b8-41a9-9d17-4a9e9d11960e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.source.field_date
+    - field.field.node.source.field_url
+    - node.type.source
+  module:
+    - datetime
+    - link
+    - user
+id: node.source.default
+targetEntityType: node
+bundle: source
+mode: default
+content:
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_url:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

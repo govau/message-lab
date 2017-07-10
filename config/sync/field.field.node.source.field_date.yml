@@ -1,0 +1,24 @@
+uuid: b47047d1-5722-4ff5-b619-2a665fe93fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.source
+  module:
+    - datetime
+id: node.source.field_date
+field_name: field_date
+entity_type: node
+bundle: source
+label: Date
+description: 'Add the date of the <em>Source</em>. This will allow other users to see the currency of the <em>Source</em>.'
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

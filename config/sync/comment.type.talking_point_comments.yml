@@ -1,0 +1,8 @@
+uuid: fff9efb7-c562-47df-bd19-cb103af18cdb
+langcode: en
+status: true
+dependencies: {  }
+id: talking_point_comments
+label: 'Talking Point Comments'
+target_entity_type_id: node
+description: '<em>Talking Point Comments</em> are only applied to <em>Talking Points</em>.'

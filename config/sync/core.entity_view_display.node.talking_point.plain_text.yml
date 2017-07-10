@@ -1,0 +1,56 @@
+uuid: beac71f1-c571-4d2a-b811-0e50435259fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.plain_text
+    - field.field.node.talking_point.body
+    - field.field.node.talking_point.field_date
+    - field.field.node.talking_point.field_project
+    - field.field.node.talking_point.field_tags
+    - node.type.talking_point
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - body
+id: node.talking_point.plain_text
+targetEntityType: node
+bundle: talking_point
+mode: plain_text
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    region: ds_content
+hidden:
+  field_date: true
+  field_project: true
+  field_tags: true
+  links: true

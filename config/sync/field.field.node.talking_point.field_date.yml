@@ -1,0 +1,24 @@
+uuid: 72a878cd-6991-46d5-9890-a2773e6fe80f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.talking_point
+  module:
+    - datetime
+id: node.talking_point.field_date
+field_name: field_date
+entity_type: node
+bundle: talking_point
+label: Date
+description: 'Adding a date to a Talking Point allows users to determine the quality of a talking point and if it should be updated or removed.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+uuid: 11e10d81-a77c-4ab8-a4e6-5079e122ac57
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_comments
+field_name: field_comments
+entity_type: node
+type: comment
+settings:
+  comment_type: talking_point_comments
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

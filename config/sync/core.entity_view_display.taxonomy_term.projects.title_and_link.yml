@@ -1,0 +1,53 @@
+uuid: 77de6e37-9a08-4653-937e-4157dc00e43b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.title_and_link
+    - field.field.taxonomy_term.projects.field_narrative
+    - field.field.taxonomy_term.projects.field_user_experiences
+    - taxonomy.vocabulary.projects
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - taxonomy_term_title
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: ''
+          class: ''
+        ft:
+          id: reset
+          settings:
+            lb: ''
+id: taxonomy_term.projects.title_and_link
+targetEntityType: taxonomy_term
+bundle: projects
+mode: title_and_link
+content: {  }
+hidden:
+  description: true
+  field_narrative: true
+  field_user_experiences: true

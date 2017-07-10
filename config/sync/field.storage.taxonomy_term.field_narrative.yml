@@ -1,0 +1,19 @@
+uuid: 6fbcb7a3-f83a-4593-b4f6-7ee40640e01f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_narrative
+field_name: field_narrative
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

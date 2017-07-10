@@ -1,0 +1,10 @@
+uuid: f7d0080e-ce40-4bfb-b867-5749233eabc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.plain_text
+label: 'Plain text'
+targetEntityType: node
+cache: true

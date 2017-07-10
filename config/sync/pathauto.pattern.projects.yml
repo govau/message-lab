@@ -1,0 +1,23 @@
+uuid: 943a7056-9ad1-4e8f-99a8-b01e38469a36
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: projects
+label: Activities
+type: 'canonical_entities:taxonomy_term'
+pattern: 'activities/[term:name]'
+selection_criteria:
+  544b3aee-bdf7-48c6-8cef-ef3b432d4607:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      projects: projects
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 544b3aee-bdf7-48c6-8cef-ef3b432d4607
+selection_logic: and
+weight: -5
+relationships: {  }

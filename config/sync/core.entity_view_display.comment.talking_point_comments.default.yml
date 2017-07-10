@@ -1,0 +1,25 @@
+uuid: 94c99f57-0707-4709-9849-0f13c0beed68
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.talking_point_comments
+    - field.field.comment.talking_point_comments.comment_body
+  module:
+    - text
+id: comment.talking_point_comments.default
+targetEntityType: comment
+bundle: talking_point_comments
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

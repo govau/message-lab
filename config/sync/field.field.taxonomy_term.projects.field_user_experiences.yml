@@ -1,0 +1,21 @@
+uuid: 19ccb90a-abb8-4b4e-aac8-689a5f58004b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_user_experiences
+    - taxonomy.vocabulary.projects
+  module:
+    - text
+id: taxonomy_term.projects.field_user_experiences
+field_name: field_user_experiences
+entity_type: taxonomy_term
+bundle: projects
+label: 'User experiences'
+description: "<p>Add user experiences gained from the project here. These will allow users to craft new stories based on the evidence from the project itself.</p>\r\n<p>While this field is not required, don't forget to add the user experiences once they are available. "
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

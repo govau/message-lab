@@ -1,0 +1,9 @@
+---
+applications:
+- name: message-lab
+  memory: 512M
+  instances: 1
+  path: .
+  services:
+  - drupal-db
+  buildpack: https://github.com/heroku/heroku-buildpack-php

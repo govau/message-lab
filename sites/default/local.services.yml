@@ -1,4 +1,8 @@
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
 parameters:
+  http.response.debug_cacheability_headers: true
   session.storage.options:
     # Default ini options for sessions.
     #
@@ -64,7 +68,7 @@ parameters:
     #
     # Not recommended in production environments
     # @default null
-    auto_reload: null
+    auto_reload: true
     # Twig cache:
     #
     # By default, Twig templates will be compiled and stored in the filesystem

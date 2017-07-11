@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5f165c1b99f8799310a07b83b5aedf5",
+    "content-hash": "a81e1ec69ead2c1a787fa8aef11f7fca",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1014,6 +1014,48 @@
             }
         },
         {
+            "name": "drupal/link_css",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/link_css",
+                "reference": "2e53337457471db70629dd75a888ddee08583280"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1478575440"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gigabates",
+                    "homepage": "https://www.drupal.org/user/1257024"
+                },
+                {
+                    "name": "jorgegc",
+                    "homepage": "https://www.drupal.org/user/834154"
+                }
+            ],
+            "description": "Include CSS files using <link> element instead of @import.",
+            "homepage": "https://www.drupal.org/project/link_css",
+            "support": {
+                "source": "http://cgit.drupalcode.org/link_css"
+            },
+            "time": "2016-11-08 03:19:30"
+        },
+        {
             "name": "drupal/module_filter",
             "version": "3.0.0",
             "source": {
@@ -1307,7 +1349,7 @@
                 "reference": "master"
             },
             "type": "drupal-custom-theme",
-            "time": "2017-07-06 06:22:13"
+            "time": "2017-07-11 06:14:15"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5047,6 +5089,7 @@
         "drupal/backup_migrate": 20,
         "drupal/devel": 5,
         "govau/message-lab-theme": 20,
+        "drupal/link_css": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,

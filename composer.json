@@ -15,7 +15,8 @@
     "ext-mbstring": "^7.0",
     "drupal/ds": "^3.1",
     "drupal/pathauto": "^1.0",
-    "govau/message-lab-theme": "dev-master"
+    "govau/message-lab-theme": "dev-master",
+    "drupal/link_css": "1.x-dev"
   },
   "replace": {
     "drupal/core": "~8.3"

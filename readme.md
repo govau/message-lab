@@ -64,6 +64,7 @@ The site has these module dependencies:
 * [Devel (1.0-rc)](https://drupal.org/project/devel)
 * [Display Suite (3.1)](https://drupal.org/project/ds)
 * [Pathauto (1.0)](https://drupal.org/project/pathauto)
+* [Link CSS (1.x-dev)](https://www.drupal.org/project/link_css)
 
 # Themes
 

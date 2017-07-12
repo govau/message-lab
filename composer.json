@@ -16,7 +16,8 @@
     "drupal/ds": "^3.1",
     "drupal/pathauto": "^1.0",
     "govau/message-lab-theme": "dev-master",
-    "drupal/link_css": "1.x-dev"
+    "drupal/link_css": "1.x-dev",
+    "drupal/easy_breadcrumb": "^1.6"
   },
   "replace": {
     "drupal/core": "~8.3"

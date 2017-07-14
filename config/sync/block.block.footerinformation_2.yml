@@ -1,0 +1,25 @@
+uuid: fdf3da70-5b56-4937-9868-03a68f1507a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:79449c87-27d5-4e0c-beb1-5bb5537a9f8f'
+  module:
+    - block_content
+  theme:
+    - message_lab_theme
+id: footerinformation_2
+theme: message_lab_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:79449c87-27d5-4e0c-beb1-5bb5537a9f8f'
+settings:
+  id: 'block_content:79449c87-27d5-4e0c-beb1-5bb5537a9f8f'
+  label: 'Footer information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

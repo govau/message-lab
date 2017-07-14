@@ -16,6 +16,7 @@ module:
   devel: 0
   ds: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   field: 0
   field_ui: 0
@@ -27,6 +28,7 @@ module:
   kint: 0
   layout_discovery: 0
   link: 0
+  link_css: 0
   menu_ui: 0
   module_filter: 0
   node: 0
@@ -58,6 +60,7 @@ theme:
   seven: 0
   adminimal_theme: 0
   message_lab: 0
+  message_lab_theme: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

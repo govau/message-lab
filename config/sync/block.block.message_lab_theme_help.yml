@@ -1,0 +1,22 @@
+uuid: 08559b7f-31a7-4b67-9fab-ccf0cc7259d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - message_lab_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: message_lab_theme_help
+theme: message_lab_theme
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

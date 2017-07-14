@@ -1,0 +1,22 @@
+uuid: 309f5f06-fd34-4af1-9e38-e27ed836f640
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - message_lab_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: message_lab_theme_breadcrumbs
+theme: message_lab_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

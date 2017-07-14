@@ -1,17 +1,17 @@
-uuid: ebd4eafb-61d5-4072-b824-e57e2f83b61f
+uuid: 1250e6cb-3484-4655-bbeb-ebabee94af68
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
-    - message_lab
+    - message_lab_theme
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: message_lab_branding
-theme: message_lab
-region: ''
-weight: -8
+id: message_lab_theme_branding
+theme: message_lab_theme
+region: header
+weight: -9
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +19,7 @@ settings:
   label: 'Site branding'
   provider: system
   label_display: '0'
-  use_site_logo: false
+  use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

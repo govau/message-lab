@@ -1,0 +1,20 @@
+uuid: 086d59f6-6ed8-4fdd-b17f-8ac8e55f7850
+langcode: en
+status: true
+dependencies:
+  theme:
+    - message_lab_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: message_lab_theme_page_title
+theme: message_lab_theme
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

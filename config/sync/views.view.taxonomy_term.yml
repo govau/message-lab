@@ -204,14 +204,11 @@ display:
             group_items: {  }
           plugin_id: boolean
       style:
-        type: html_list
+        type: default
         options:
           grouping: {  }
-          row_class: '{{ field_date }}'
+          row_class: talking-point
           default_row_class: false
-          type: ul
-          wrapper_class: ''
-          class: ''
       row:
         type: fields
         options:
@@ -443,7 +440,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -467,7 +464,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
             preserve_tags: ''
             html: false
@@ -505,7 +502,7 @@ display:
           group_type: group
           admin_label: ''
           label: Date
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -569,8 +566,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Tagged with'
-          exclude: false
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -602,7 +599,7 @@ display:
           element_class: ''
           element_label_type: em
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: div
           element_wrapper_class: ''
           element_default_classes: false
@@ -627,10 +624,61 @@ display:
           group_type: group
           admin_label: ''
           label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          absolute: false
+          entity_type: node
+          plugin_id: node_path
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
           exclude: false
           alter:
             alter_text: true
-            text: '<button class="uikit-btn"><a href="{{ path }}">View</a></button>'
+            text: "<div class=\"body\">{{ body }}</div>\n<div class=\"date\"><em>Date: </em>{{ field_date }}</div>\n<div class=\"container row\">\n  {{ term_node_tid }}\n  <a class=\"uikit-cta-link\" href=\"{{ path }}\">View</a>\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -666,10 +714,8 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
-          absolute: false
-          entity_type: node
-          plugin_id: node_path
+          hide_alter_empty: false
+          plugin_id: custom
       defaults:
         fields: false
     cache_metadata:

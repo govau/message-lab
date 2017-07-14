@@ -1,0 +1,46 @@
+uuid: 7a28e16f-abd9-4928-a80f-48cc9f2cc6bb
+langcode: en
+status: true
+dependencies: {  }
+id: author
+label: Author
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer taxonomy'
+  - 'create evidence content'
+  - 'create source content'
+  - 'create talking_point content'
+  - 'create url aliases'
+  - 'delete any source content'
+  - 'delete any talking_point content'
+  - 'delete own evidence content'
+  - 'delete terms in projects'
+  - 'delete terms in tags'
+  - 'edit any evidence content'
+  - 'edit any source content'
+  - 'edit any talking_point content'
+  - 'edit own comments'
+  - 'edit terms in projects'
+  - 'edit terms in tags'
+  - 'post comments'
+  - 'revert evidence revisions'
+  - 'revert source revisions'
+  - 'revert talking_point revisions'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view all revisions'
+  - 'view evidence revisions'
+  - 'view own unpublished content'
+  - 'view source revisions'
+  - 'view talking_point revisions'
+  - 'view the administration theme'

@@ -1,0 +1,30 @@
+uuid: de1603bd-044b-43bc-bd0e-61b848d9069a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - message_lab_theme
+id: message_lab_theme_views_block__projects_block_2
+theme: message_lab_theme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:projects-block_2'
+settings:
+  id: 'views_block:projects-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

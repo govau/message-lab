@@ -5,6 +5,7 @@
   "license": "GPL-2.0+",
   "require": {
     "composer/installers": "^1.0.24",
+    "drupal/core": "~8.0",
     "ext-gd": "*",
     "wikimedia/composer-merge-plugin": "~1.4",
     "drupal/module_filter": "^3.0",
@@ -18,9 +19,6 @@
     "govau/message-lab-theme": "dev-master",
     "drupal/link_css": "1.x-dev",
     "drupal/easy_breadcrumb": "^1.6"
-  },
-  "replace": {
-    "drupal/core": "~8.3"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -67,8 +65,8 @@
     "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
     "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
   },
-  "repositories": {
-    "message_theme": {
+  "repositories": [
+    {
       "type": "package",
       "package": {
         "name": "govau/message-lab-theme",
@@ -81,9 +79,9 @@
         }
       }
     },
-    "packagist" : {
+    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
-  }
+  ]
 }

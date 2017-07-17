@@ -18,7 +18,8 @@
     "drupal/pathauto": "^1.0",
     "govau/message-lab-theme": "dev-master",
     "drupal/link_css": "1.x-dev",
-    "drupal/easy_breadcrumb": "^1.6"
+    "drupal/easy_breadcrumb": "^1.6",
+    "drupal/twig_tweak": "^1.8"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

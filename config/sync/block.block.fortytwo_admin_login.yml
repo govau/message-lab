@@ -1,17 +1,17 @@
-uuid: dc5c0e2a-a69f-448a-91c0-f132a675ad31
+uuid: b1a9731f-31e0-41cf-977c-130ee703ae60
 langcode: en
 status: true
 dependencies:
   module:
     - user
   theme:
-    - adminimal_theme
+    - fortytwo_admin
 _core:
-  default_config_hash: 862sIulDdHmF0vBU1s2j2_a_CwkxursrL0pIrMDzzOg
-id: adminimal_theme_login
-theme: adminimal_theme
+  default_config_hash: xcHqnX879U3nSuzIh6SVMMNDWpqFzAnvW8sesrhWa8Y
+id: fortytwo_admin_login
+theme: fortytwo_admin
 region: content
-weight: 10
+weight: 1
 provider: null
 plugin: user_login_block
 settings:

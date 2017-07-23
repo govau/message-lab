@@ -1,0 +1,20 @@
+uuid: b922ef13-53ec-48b4-9f68-a34989c4bf52
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_simple_clear_fast
+field_name: field_simple_clear_fast
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

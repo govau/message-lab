@@ -12,7 +12,7 @@ field_name: field_narrative
 entity_type: taxonomy_term
 bundle: projects
 label: '250-word description'
-description: 'The <em>250-word description</em> field allows you to provide a narrative context for the <em>Project</em>.'
+description: 'The <em>250-word description</em> field allows you to provide a narrative context for the <em>Project</em>. Make sure that any headings you provide here <em>begin</em> with <strong>H3</strong>.'
 required: false
 translatable: false
 default_value: {  }

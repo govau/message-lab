@@ -1,0 +1,9 @@
+uuid: 2576f30e-33ef-466c-ac05-01ed97d9bcea
+langcode: en
+status: true
+dependencies: {  }
+name: 'Simple, Clear, Fast'
+vid: simple_clear_fast
+description: 'A simple, clear and fast vocabulary for tagging talking points and how they reflect agency messages.'
+hierarchy: 0
+weight: 0

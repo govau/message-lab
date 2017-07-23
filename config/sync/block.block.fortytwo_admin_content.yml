@@ -1,17 +1,17 @@
-uuid: c5b180aa-9db0-484f-a726-e3b9a5fdff51
+uuid: 6b9d86aa-5b2b-4557-8b0d-0e73a1be0459
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - message_lab
+    - fortytwo_admin
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: message_lab_content
-theme: message_lab
+  default_config_hash: if5Q64f5xdQ6Ja_M15GoFeS7ndjfNXmMW1kZAsaFFUk
+id: fortytwo_admin_content
+theme: fortytwo_admin
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

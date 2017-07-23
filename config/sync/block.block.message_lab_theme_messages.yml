@@ -10,8 +10,8 @@ _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: message_lab_theme_messages
 theme: message_lab_theme
-region: highlighted
-weight: 0
+region: help
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

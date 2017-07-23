@@ -1,0 +1,20 @@
+uuid: 37b0b671-32ff-4408-adee-9a38c0d0b517
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fortytwo_admin
+id: tabs
+theme: fortytwo_admin
+region: navigation
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

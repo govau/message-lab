@@ -1,15 +1,15 @@
-uuid: 78f83c7a-ce0a-4f59-b59a-d000e3054923
+uuid: 3060a726-3f27-4504-bd32-16b2dd6bbf0d
 langcode: en
 status: true
 dependencies:
   theme:
-    - message_lab
+    - fortytwo_admin
 _core:
-  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: message_lab_local_actions
-theme: message_lab
+  default_config_hash: E8T3TgIEjepcl5yhLjewYStI8B0Lb2UPeK1drzoyxWo
+id: fortytwo_admin_local_actions
+theme: fortytwo_admin
 region: content
-weight: -6
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

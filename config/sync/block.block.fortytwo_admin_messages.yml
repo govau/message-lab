@@ -1,15 +1,15 @@
-uuid: fee8f12e-c016-4ada-875e-8b72153a0147
+uuid: 42f98466-ec9b-44b2-9c46-0711f0287404
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - adminimal_theme
+    - fortytwo_admin
 _core:
-  default_config_hash: YqKTtloWJ8FjLtfVNfrHaK6kVgxT67lC1cJ3j6i6WLo
-id: adminimal_theme_messages
-theme: adminimal_theme
+  default_config_hash: R7sFe7xc1-Ltk80tY4MaUm4kde4ZgbduiuGPmpMP9mM
+id: fortytwo_admin_messages
+theme: fortytwo_admin
 region: highlighted
 weight: 0
 provider: null

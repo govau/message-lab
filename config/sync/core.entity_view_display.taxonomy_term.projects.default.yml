@@ -27,9 +27,24 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - taxonomy_term_title
         - description
         - field_user_experiences
         - field_narrative
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+        ft:
+          id: reset
+          settings:
+            lb: ''
 id: taxonomy_term.projects.default
 targetEntityType: taxonomy_term
 bundle: projects
@@ -38,7 +53,7 @@ content:
   description:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     region: ds_content
     settings: {  }
     third_party_settings:
@@ -54,12 +69,13 @@ content:
             ow-el: ''
             ow-cl: ''
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
+            fis: true
+            fis-el: section
+            fis-cl: uikit-callout
             fis-at: ''
             fi: true
-            fi-el: section
-            fi-cl: uikit-callout
+            fi-el: strong
+            fi-cl: ''
             fi-at: ''
             suffix: ''
             lbw: false
@@ -67,11 +83,10 @@ content:
             ow: false
             ow-def-at: false
             ow-def-cl: false
-            fis: false
             fis-def-at: false
             fi-def-at: false
   field_narrative:
-    weight: 2
+    weight: 3
     label: above
     settings: {  }
     third_party_settings:
@@ -106,7 +121,7 @@ content:
     type: text_default
     region: ds_content
   field_user_experiences:
-    weight: 1
+    weight: 2
     label: above
     settings: {  }
     third_party_settings:

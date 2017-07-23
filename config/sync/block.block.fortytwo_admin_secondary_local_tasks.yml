@@ -1,15 +1,15 @@
-uuid: 90ca092f-ebcf-46a2-880e-ebf6a5b37546
+uuid: b0f86afd-ff8f-4119-a91b-f7cb820f0210
 langcode: en
 status: true
 dependencies:
   theme:
-    - adminimal_theme
+    - fortytwo_admin
 _core:
-  default_config_hash: DJ7Om1C2xWr2GI8CjZaZtyWpP-0S3hRR3oROZl1oesc
-id: adminimal_theme_secondary_local_tasks
-theme: adminimal_theme
-region: pre_content
-weight: 0
+  default_config_hash: OFAXXVYsqdf1pRz8OwQ2tTFcY9jPByJnHNKnLzcS_VI
+id: fortytwo_admin_secondary_local_tasks
+theme: fortytwo_admin
+region: content
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

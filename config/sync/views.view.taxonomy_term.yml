@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_date
+    - node.type.talking_point
   module:
     - datetime
     - node
@@ -58,32 +59,19 @@ display:
         options:
           offset: 0
       sorts:
-        sticky:
-          id: sticky
-          table: taxonomy_index
-          field: sticky
+        field_date_value:
+          id: field_date_value
+          table: node__field_date
+          field: field_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
           order: DESC
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
           exposed: false
           expose:
             label: ''
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
+          granularity: second
+          plugin_id: datetime
       arguments:
         tid:
           id: tid
@@ -203,6 +191,46 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: boolean
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            talking_point: talking_point
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       style:
         type: default
         options:
@@ -369,6 +397,7 @@ display:
       display_extenders: {  }
       link_url: ''
       link_display: page_1
+      title: Term
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -559,8 +588,8 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        term_node_tid:
-          id: term_node_tid
+        term_node_tid_1:
+          id: term_node_tid_1
           table: node_field_data
           field: term_node_tid
           relationship: none
@@ -595,11 +624,69 @@ display:
             trim: false
             preserve_tags: ''
             html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: true
+          empty_zero: true
+          hide_alter_empty: true
+          type: ul
+          separator: ', '
+          link_to_taxonomy: true
+          limit: true
+          vids:
+            simple_clear_fast: simple_clear_fast
+            projects: '0'
+            tags: '0'
+          entity_type: node
+          plugin_id: taxonomy_index_tid
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Tags
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: '0'
           element_class: ''
           element_label_type: em
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: div
           element_wrapper_class: ''
           element_default_classes: false
@@ -610,10 +697,11 @@ display:
           type: ul
           separator: ', '
           link_to_taxonomy: true
-          limit: false
+          limit: true
           vids:
-            projects: '0'
-            tags: '0'
+            projects: projects
+            tags: tags
+            simple_clear_fast: '0'
           entity_type: node
           plugin_id: taxonomy_index_tid
         path:
@@ -678,7 +766,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"body\">{{ body }}</div>\n<div class=\"date\"><em>Date: </em>{{ field_date }}</div>\n<div class=\"container row\">\n  {{ term_node_tid }}\n  <a class=\"uikit-cta-link\" href=\"{{ path }}\">View</a>\n</div>"
+            text: "<div class=\"body\">{{ body }}</div>\n<div class=\"date\"><em>Date: </em>{{ field_date }}</div>\n<div class=\"container row\">\n  {% if term_node_tid_1 is not empty %}\n    <dl class=\"uikit-tags col-sm-10 uikit-tags-scf\">\n      <dt>Simple, Clear, Fast: </dt>\n      {{ term_node_tid_1 }}\n    </dl>\n  {% endif %}\n  {% if term_node_tid is not empty %}\n    <dl class=\"uikit-tags col-sm-10 uikit-tags-tags\">\n      <dt>Tags: </dt>\n      {{ term_node_tid }}\n    </dl>\n  {% endif %}\n  <div class=\"grids col-sm-2\">\n    <a class=\"uikit-cta-link\" href=\"{{ path }}\">View</a>\n  </div>\n</div>"
             make_link: false
             path: ''
             absolute: false

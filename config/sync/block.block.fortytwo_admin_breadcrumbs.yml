@@ -1,17 +1,17 @@
-uuid: b565fbb4-b7d1-4eaf-8531-ea7e2b261cd2
+uuid: b4b013bc-35f6-454f-b943-8d59ee3edd77
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - adminimal_theme
+    - fortytwo_admin
 _core:
-  default_config_hash: 8by5KRsb7ZpmjHj0ms1d7xAG_xH54AWsOX6spDLJ59U
-id: adminimal_theme_breadcrumbs
-theme: adminimal_theme
-region: breadcrumb
-weight: 0
+  default_config_hash: yKwPGSBfqNZNl-e5bsw4ZHUsDdVB0odQ68JixwYXPDc
+id: fortytwo_admin_breadcrumbs
+theme: fortytwo_admin
+region: header
+weight: -4
 provider: null
 plugin: system_breadcrumb_block
 settings:

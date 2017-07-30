@@ -36,12 +36,12 @@ third_party_settings:
     regions:
       ds_content:
         - 'bundle_field:node'
-        - links
         - body
         - field_date
         - field_simple_clear_fast
         - field_project
         - field_tags
+        - links
         - field_comments
     fields:
       'bundle_field:node':
@@ -84,7 +84,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: ds_content
@@ -98,44 +98,16 @@ content:
     type: comment_default
     region: ds_content
   field_date:
-    weight: 3
+    weight: 2
     label: inline
     settings:
       timezone_override: ''
       format_type: month_year
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw: true
-            lbw-el: strong
-            lbw-cl: ''
-            lbw-at: ''
-            lb-col: true
-            ow: true
-            ow-el: div
-            ow-cl: date
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
+    third_party_settings: {  }
     type: datetime_default
     region: ds_content
   field_project:
-    weight: 5
+    weight: 4
     label: inline
     settings:
       link: true
@@ -172,7 +144,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_simple_clear_fast:
-    weight: 4
+    weight: 3
     label: inline
     settings:
       link: true
@@ -209,7 +181,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_tags:
-    weight: 6
+    weight: 5
     label: inline
     settings:
       link: true
@@ -246,7 +218,7 @@ content:
     type: entity_reference_label
     region: ds_content
   links:
-    weight: 1
+    weight: 6
     region: ds_content
     settings: {  }
     third_party_settings: {  }

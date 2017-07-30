@@ -2,7 +2,7 @@ country:
   default: AU
 first_day: 0
 timezone:
-  default: UTC
+  default: Australia/Sydney
   user:
     configurable: true
     warn: false

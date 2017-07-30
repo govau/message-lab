@@ -14,4 +14,4 @@ description: "<p><em>Evidence</em> items are short pieces of text providing the 
 help: ''
 new_revision: true
 preview_mode: 0
-display_submitted: false
+display_submitted: true

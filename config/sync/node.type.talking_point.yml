@@ -14,4 +14,4 @@ description: "<p><em>Talking Points</em> are the core content type. They are sho
 help: ''
 new_revision: true
 preview_mode: 0
-display_submitted: false
+display_submitted: true

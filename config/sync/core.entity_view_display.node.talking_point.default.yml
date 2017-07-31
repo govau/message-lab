@@ -15,6 +15,7 @@ dependencies:
     - comment
     - datetime
     - ds
+    - field_group
     - text
     - user
 third_party_settings:
@@ -36,6 +37,7 @@ third_party_settings:
     regions:
       ds_content:
         - 'bundle_field:node'
+        - group_author_information
         - body
         - field_date
         - field_simple_clear_fast
@@ -43,6 +45,8 @@ third_party_settings:
         - field_tags
         - links
         - field_comments
+        - node_author
+        - node_post_date
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -76,6 +80,90 @@ third_party_settings:
             fis: false
             fis-def-at: false
             fi-def-at: false
+      node_author:
+        plugin_id: node_author
+        weight: 9
+        label: hidden
+        formatter: author_linked
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: 'Written by '
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 10
+        label: hidden
+        formatter: ds_post_date_short
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: 'on '
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_group:
+    group_author_information:
+      children:
+        - node_author
+        - node_post_date
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Author Information'
+        element: p
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'Author Information'
+      region: hidden
 id: node.talking_point.default
 targetEntityType: node
 bundle: talking_point
@@ -84,12 +172,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: ds_content
   field_comments:
-    weight: 7
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -98,7 +186,7 @@ content:
     type: comment_default
     region: ds_content
   field_date:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       timezone_override: ''
@@ -107,7 +195,7 @@ content:
     type: datetime_default
     region: ds_content
   field_project:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link: true
@@ -144,7 +232,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_simple_clear_fast:
-    weight: 3
+    weight: 4
     label: inline
     settings:
       link: true
@@ -181,7 +269,7 @@ content:
     type: entity_reference_label
     region: ds_content
   field_tags:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link: true
@@ -218,7 +306,7 @@ content:
     type: entity_reference_label
     region: ds_content
   links:
-    weight: 6
+    weight: 7
     region: ds_content
     settings: {  }
     third_party_settings: {  }

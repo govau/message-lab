@@ -13,7 +13,7 @@ _core:
 id: message_lab_theme_main_menu
 theme: message_lab_theme
 region: primary_menu
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

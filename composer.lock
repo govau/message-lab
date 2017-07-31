@@ -1421,7 +1421,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/fortytwo_admin_toolbar-8.x-1.5.zip",
-                "reference": null,
+                "reference": "8.x-1.5",
                 "shasum": "9f27f6408f85dce83bcc760b905f67956f5d7b71"
             },
             "require": {

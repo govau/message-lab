@@ -19,7 +19,10 @@
     "govau/message-lab-theme": "dev-master",
     "drupal/link_css": "1.x-dev",
     "drupal/easy_breadcrumb": "^1.6",
-    "drupal/twig_tweak": "^1.8"
+    "drupal/twig_tweak": "^1.8",
+    "drupal/field_group": "3.x-dev",
+    "drupal/fortytwo_admin": "^1.12",
+    "drupal/fortytwo_admin_toolbar": "^1.5"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

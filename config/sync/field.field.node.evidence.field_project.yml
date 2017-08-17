@@ -10,8 +10,8 @@ id: node.evidence.field_project
 field_name: field_project
 entity_type: node
 bundle: evidence
-label: Project
-description: 'Select which <em>Project</em> this <em>Evidence</em item relates to. This will ensure that the <em>Evidence</em> sits correctly on the <em>Project</em> page.'
+label: Activities
+description: 'Select which <em>Activity</em> this <em>Evidence</em item relates to. This will ensure that the <em>Evidence</em> sits correctly on the <em>Activity</em> page.'
 required: true
 translatable: true
 default_value: {  }

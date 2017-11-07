@@ -31,6 +31,7 @@ third_party_settings:
       ds_content:
         - 'bundle_field:node'
         - field_url
+        - node_title
     fields:
       'bundle_field:node':
         plugin_id: 'bundle_field:node'
@@ -58,6 +59,42 @@ third_party_settings:
             suffix: ''
             lbw: false
             lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: inline
+        formatter: default
+        settings:
+          link: true
+          wrapper: ''
+          class: ''
+        ft:
+          id: expert
+          settings:
+            lb: 'View source'
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: p
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
             ow-def-at: false
             ow-def-cl: false
             fis: false

@@ -10,8 +10,8 @@ id: node.talking_point.field_project
 field_name: field_project
 entity_type: node
 bundle: talking_point
-label: Project
-description: 'You must assign a <strong>Talking Point</strong> to a Project otherwise it will not be available to users.'
+label: Activity
+description: 'You must assign a <strong>Talking Point</strong> to an Activity otherwise it will be difficult for users to find.'
 required: true
 translatable: false
 default_value: {  }

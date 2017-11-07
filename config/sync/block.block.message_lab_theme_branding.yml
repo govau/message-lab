@@ -11,7 +11,7 @@ _core:
 id: message_lab_theme_branding
 theme: message_lab_theme
 region: header
-weight: -8
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

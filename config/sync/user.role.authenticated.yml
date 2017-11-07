@@ -11,9 +11,7 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access shortcuts'
+  - 'access site in maintenance mode'
   - 'access site-wide contact form'
-  - 'post comments'
+  - 'access toolbar'
   - 'search content'
-  - 'skip comment approval'
-  - 'use text format basic_html'

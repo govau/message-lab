@@ -420,7 +420,6 @@ display:
         type: normal
         title: 'All content'
         menu_name: main
-        weight: -45
     cache_metadata:
       max-age: 0
       contexts:

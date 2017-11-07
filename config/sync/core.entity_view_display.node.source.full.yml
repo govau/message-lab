@@ -1,8 +1,9 @@
-uuid: d53516b9-a2b8-41a9-9d17-4a9e9d11960e
+uuid: 5e6f484a-cecf-4c6e-ba04-2d957c67ce45
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.source.field_date
     - field.field.node.source.field_url
     - node.type.source
@@ -32,14 +33,14 @@ third_party_settings:
         - links
         - field_url
         - field_date
-id: node.source.default
+id: node.source.full
 targetEntityType: node
 bundle: source
-mode: default
+mode: full
 content:
   field_date:
     weight: 102
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -48,7 +49,7 @@ content:
     region: ds_content
   field_url:
     weight: 101
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false

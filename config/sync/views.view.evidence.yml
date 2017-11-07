@@ -255,7 +255,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: month_year
+            format_type: day_month_year
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -461,7 +461,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container row\">\n  <div class=\"grids col-sm-10\">\n    <p><strong>URL:</strong>&nbsp;{{ field_url }}</p>\n    <p><strong>Date:</strong>&nbsp;{{ field_date }}</p>\n    <p>Written by {{ uid }} on {{ created }}.</p>\n  </div>\n  <div class=\"grids col-sm-2\">\n    <a class=\"uikit-cta-link\" href=\"{{ path }}\">View</a>\n  </div>\n</div>"
+            text: "<div class=\"container row\">\n  <div class=\"grids col-sm-10\">\n    <p><strong>URL:</strong>&nbsp;{{ field_url }}</p>\n    <p><strong>Source Date:</strong>&nbsp;{{ field_date }}</p>\n    <p>Written by {{ uid }} on {{ created }}.</p>\n  </div>\n  <div class=\"grids col-sm-2\">\n    <a class=\"uikit-cta-link\" href=\"{{ path }}\">View</a>\n  </div>\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -520,20 +520,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts:
-        field_date_value:
-          id: field_date_value
-          table: node__field_date
-          field: field_date_value
-          relationship: field_source
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: true
-          expose:
-            label: 'Source date'
-          granularity: day
-          plugin_id: datetime
+      sorts: {  }
       title: Evidence
       header: {  }
       footer: {  }
@@ -612,8 +599,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -623,10 +608,27 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: List
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: 'Displays a list of Evidence items.'
+      sorts:
+        field_date_value:
+          id: field_date_value
+          table: node__field_date
+          field: field_date_value
+          relationship: field_source
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Date of source'
+          granularity: minute
+          plugin_id: datetime
+      defaults:
+        sorts: false
     cache_metadata:
       max-age: -1
       contexts:

@@ -6,4 +6,4 @@ applications:
   path: .
   services:
   - drupal-db
-  buildpack: https://github.com/heroku/heroku-buildpack-php
+  buildpack: php_buildpack

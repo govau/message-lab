@@ -1,6 +1,6 @@
-core
-vendor
 sites/*/local.services.yml
 sites/*/settings.local.php
 sites/*/private
 sites/simpletest
+composer.json
+composer.lock

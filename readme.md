@@ -19,7 +19,9 @@ Note it does not create content types, views or roles by default. These can be i
 
 # How to use
 
-The site is installed and managed with [Composer](https://getcomposer.org/). This includes all site dependencies, including core, modules and themes.
+The site is installed and managed **locallly** with [Composer](https://getcomposer.org/). This includes all site dependencies, including core, modules and themes.
+
+Depending on the final destination server, upload all the files manually or use Composer.
 
 ## Install Composer
 

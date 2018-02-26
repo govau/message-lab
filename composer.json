@@ -5,7 +5,7 @@
   "license": "GPL-2.0+",
   "require": {
     "composer/installers": "^1.0.24",
-    "drupal/core": "~8.0",
+    "drupal/core": "^8.4.5",
     "ext-gd": "*",
     "wikimedia/composer-merge-plugin": "~1.4",
     "drupal/module_filter": "^3.0",
@@ -22,7 +22,8 @@
     "drupal/twig_tweak": "^1.8",
     "drupal/field_group": "3.x-dev",
     "drupal/fortytwo_admin": "^1.12",
-    "drupal/fortytwo_admin_toolbar": "^1.5"
+    "drupal/fortytwo_admin_toolbar": "^1.5",
+    "drush/drush": "^9.2"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

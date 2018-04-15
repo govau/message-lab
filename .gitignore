@@ -1,5 +1,6 @@
 # Ignore configuration files containing sensitive information.
 sites/*/settings.local.php
+sites/*/local.services.yml
 
 # Ignore paths that contain generated content, although we need /tmp/ to be uploaded.
 sites/*/files/*

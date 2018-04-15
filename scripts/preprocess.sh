@@ -19,8 +19,6 @@ PATH="${HOME}/scripts/mysql:${PATH}"
 # Add vendored bin dir to PATH
 PATH="${HOME}/bin:${PATH}"
 
-cd docroot
-
 # Only execute on the first application instance
 if [[ "${CF_INSTANCE_INDEX}" = "0" ]]; then
   echo "I am the first instance"

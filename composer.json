@@ -4,8 +4,9 @@
   "type": "project",
   "license": "GPL-2.0+",
   "require": {
+    "php": "~7.1.0",
     "composer/installers": "^1.0.24",
-    "drupal/core": "^8.4.5",
+    "drupal/core": "^8.5.1",
     "ext-gd": "*",
     "wikimedia/composer-merge-plugin": "~1.4",
     "drupal/module_filter": "^3.0",

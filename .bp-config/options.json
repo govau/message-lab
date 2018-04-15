@@ -1,4 +1,7 @@
 {
-	"PHP_VERSION": "{PHP_71_LATEST}",
-  "ZEND_EXTENSIONS": ["opcache"]
+	"COMPOSER_VENDOR_DIR": "{BUILD_DIR}/vendor",
+	"COMPOSER_BIN_DIR": "{BUILD_DIR}/bin",
+  "ZEND_EXTENSIONS": ["opcache"],
+	"WEBDIR": ".",
+	"ADDITIONAL_PREPROCESS_CMDS": ["./scripts/preprocess.sh"]
 }

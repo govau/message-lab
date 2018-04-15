@@ -1,50 +1,48 @@
-# This file contains default .gitignore rules. To use it, copy it to .gitignore,
-# and it will cause files like your settings.php and user-uploaded files to be
-# excluded from Git version control. This is a common strategy to avoid
-# accidentally including private information in public repositories and patch
-# files.
-#
-# Because .gitignore can be specific to your site, this file has a different
-# name; updating Drupal core will not override your custom .gitignore file.
+# Ignore configuration files containing sensitive information.
+sites/*/settings.local.php
 
-# Ignore core when managing all of a project's dependencies with Composer
-# including Drupal core.
-core
-
-# Core's dependencies are managed with Composer.
-vendor
-
-# Module dependencies are also managed with Composer, no need to store them!
-*/contrib
-
-# Themes are also managed with Composer, including custom themes.
-themes
-
-# Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
-sites/*/services*.yml
-
-# Ignore paths that contain user-generated content.
-sites/*/files
+# Ignore paths that contain generated content, although we need /tmp/ to be uploaded.
+sites/*/files/*
+!sites/*/files/config*
 sites/*/private
 
-# Ignore SimpleTest multi-site environment.
-sites/simpletest
+# Ignore default text files
+#robots.txt
+CHANGELOG.txt
+COPYRIGHT.txt
+INSTALL*.txt
+#LICENSE.txt
+MAINTAINERS.txt
+UPGRADE.txt
+README.txt
 
-# If you prefer to store your .gitignore file in the sites/ folder, comment
-# or delete the previous settings and uncomment the following ones, instead.
+# Ignore the extra 'vendor' folder.
+#docroot/vendor
+#docroot/composer.*
+#docroot/autoload.php
 
-# Ignore configuration files that may contain sensitive information.
-# */settings*.php
+# Ignore vendor folder.
+vendor
 
-# Ignore paths that contain user-generated content.
-# */files
-# */private
+# Ignore everything but the "sites" folder ( for non core developer )
+#.htaccess
+#web.config
+#authorize.php
+#cron.php
+#index.php
+#install.php
+#update.php
+#xmlrpc.php
+core
+#docroot/includes
+#docroot/misc
+modules
+#docroot/profiles
+#docroot/scripts
+themes
+libraries
+bin
+social_auth_google.settings.yml
 
-# Ignore SimpleTest multi-site environment.
-# simpletest
-
-# Ignore core phpcs.xml and phpunit.xml.
-core/phpcs.xml
-core/phpunit.xml
-*.dd
+secrets-*
+disqus.settings.yml

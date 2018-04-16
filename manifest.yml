@@ -10,6 +10,6 @@ applications:
   - message-lab-test-db
   buildpack: php_buildpack
   routes:
-  - route: message-lab-test.apps.y.cld.gov.au
+  - route: message-lab.apps.y.cld.gov.au
   env:
     DRUPAL_UUID: "47c44fa2-5b7d-4c06-8a23-d2c2757e8e31"

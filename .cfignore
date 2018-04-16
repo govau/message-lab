@@ -17,11 +17,6 @@ MAINTAINERS.txt
 UPGRADE.txt
 README.txt
 
-# Ignore the extra 'vendor' folder.
-#docroot/vendor
-#docroot/composer.*
-#docroot/autoload.php
-
 # Ignore vendor folder.
 vendor
 

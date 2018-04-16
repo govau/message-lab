@@ -811,5 +811,5 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 
 # $config_directories['sync'] = 'sites/default/files/config_siPYosbKZkBmNHHvIdXz3kc2ZkWXhaA0V-kbX2LrhJ--clWNdp7am9A5GgKq4Zl5b-YrBDNndQ/sync';
 $config_directories = array(
-  CONFIG_SYNC_DIRECTORY => 'config/sync',
+  CONFIG_SYNC_DIRECTORY => 'config/config_siPYosbKZkBmNHHvIdXz3kc2ZkWXhaA0V-kbX2LrhJ--clWNdp7am9A5GgKq4Zl5b-YrBDNndQ/sync',
 );

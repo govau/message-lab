@@ -1,10 +1,11 @@
 # Ignore configuration files containing sensitive information.
-sites/*/settings.local.php
+docroot/sites/*/settings.local.php
+docroot/sites/*/local.services.yml
 
 # Ignore paths that contain generated content, although we need /tmp/ to be uploaded.
-sites/*/files/*
-!sites/*/files/config*
-sites/*/private
+docroot/sites/*/files/*
+!docroot/sites/*/files/config*
+docroot/sites/*/private
 
 # Ignore default text files
 #robots.txt
@@ -33,14 +34,14 @@ vendor
 #install.php
 #update.php
 #xmlrpc.php
-core
+docroot/core
 #docroot/includes
 #docroot/misc
-modules
+docroot/modules
 #docroot/profiles
 #docroot/scripts
-themes
-libraries
+docroot/themes
+docroot/libraries
 bin
 social_auth_google.settings.yml
 

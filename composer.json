@@ -7,7 +7,7 @@
     "php": "~7.1.0",
     "oomphinc/composer-installers-extender": "^1.1",
     "drupal-composer/drupal-scaffold": "^2.4",
-    "drupal/core": "8.5.1",
+    "drupal/core": "^8.5.1",
     "drupal/module_filter": "^3.0",
     "drupal/admin_toolbar": "^1.19",
     "drupal/backup_migrate": "4.x-dev",

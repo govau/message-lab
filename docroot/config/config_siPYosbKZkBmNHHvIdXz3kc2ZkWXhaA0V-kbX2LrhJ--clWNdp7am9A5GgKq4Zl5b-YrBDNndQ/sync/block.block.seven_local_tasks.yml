@@ -1,13 +1,15 @@
-uuid: 37b0b671-32ff-4408-adee-9a38c0d0b517
+uuid: 6a875f54-12fd-4e4c-9845-3ec0c893336b
 langcode: en
 status: true
 dependencies:
   theme:
-    - fortytwo_admin
-id: tabs
-theme: fortytwo_admin
-region: navigation
-weight: -2
+    - seven
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: seven_local_tasks
+theme: seven
+region: content
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
@@ -16,5 +18,5 @@ settings:
   provider: core
   label_display: '0'
   primary: true
-  secondary: false
+  secondary: true
 visibility: {  }

@@ -1,0 +1,34 @@
+uuid: b94afb7f-1703-4e2f-b58f-445c7f8d9d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sources
+  module:
+    - ctools
+    - views
+  theme:
+    - seven
+id: seven_views_block__sources_block_1
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:sources-block_1'
+settings:
+  id: 'views_block:sources-block_1'
+  label: 'Source used by:'
+  provider: views
+  label_display: visible
+  views_label: 'Source used by:'
+  items_per_page: none
+  context_mapping:
+    nid: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      source: source
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,30 @@
+uuid: 623e6e08-65fa-4436-955c-f11e412ecb22
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - seven
+id: seven_views_block__projects_block_2
+theme: seven
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:projects-block_2'
+settings:
+  id: 'views_block:projects-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

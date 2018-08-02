@@ -1,0 +1,30 @@
+uuid: cf14053b-0bf4-4e35-a1e2-328c907a5e90
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - seven
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: seven_page_title
+theme: seven
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+      source: source
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
